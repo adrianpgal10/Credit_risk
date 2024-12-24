@@ -1,0 +1,66 @@
+    person_age:
+        Descripción: Edad de la persona que solicita el préstamo.
+        Ejemplo: 22
+
+    person_income:
+        Descripción: Ingreso anual de la persona en unidades monetarias.
+        Ejemplo: 59000
+
+    person_home_ownership:
+        Descripción: Tipo de propiedad de la persona (si es dueño de su casa, alquila, etc.).
+        Valores comunes:
+            OWN: Propietario de la vivienda
+            RENT: Alquila
+            MORTGAGE: Tiene hipoteca
+        Ejemplo: RENT (alquila)
+
+    person_emp_length:
+        Descripción: Número de años que la persona ha estado empleada en su trabajo actual.
+        Ejemplo: 123.0 (en este caso parece que hay un valor atípico o error, ya que debería ser un número más razonable)
+
+    loan_intent:
+        Descripción: La intención del préstamo que está solicitando la persona.
+        Ejemplo:
+            PERSONAL: Para gastos personales
+            EDUCATION: Para educación
+            MEDICAL: Para gastos médicos
+        Ejemplo: PERSONAL
+
+    loan_grade:
+        Descripción: La calificación del préstamo, que se refiere al riesgo asociado con el préstamo. Usualmente se asigna una letra (A, B, C, etc.).
+        Valores comunes:
+            A, B, C, D, etc., siendo A el menor riesgo y D o más bajo el mayor riesgo.
+        Ejemplo: D
+
+    loan_amnt:
+        Descripción: El monto total del préstamo solicitado.
+        Ejemplo: 35000
+
+    loan_int_rate:
+        Descripción: La tasa de interés anual aplicada al préstamo.
+        Ejemplo: 16.02
+
+    loan_status:
+        Descripción: El estado del préstamo solicitado. Usualmente se indica si el préstamo fue pagado, si está pendiente o si ha sido incumplido.
+        Valores comunes:
+            1: El préstamo está incumplido
+            0: El préstamo está en buen estado (pagado o en proceso de pago)
+        Ejemplo: 1 (incumplido)
+
+    loan_percent_income:
+
+    Descripción: El porcentaje del ingreso anual de la persona que se destina al pago del préstamo.
+    Ejemplo: 0.59 (59%)
+
+    cb_person_default_on_file:
+
+    Descripción: Si la persona tiene antecedentes de incumplimiento de pagos registrados en el archivo de crédito.
+    Valores comunes:
+        Y: Tiene historial de incumplimiento de pago
+        N: No tiene historial de incumplimiento de pago
+    Ejemplo: Y (tiene historial de incumplimiento)
+
+    cb_person_cred_hist_length:
+
+    Descripción: La longitud del historial crediticio de la persona, es decir, cuántos años de historial crediticio tiene.
+    Ejemplo: 3 (3 años de historial crediticio)
